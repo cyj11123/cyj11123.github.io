@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>我的实验博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实验博客</title>
+<style>
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: #f5f7fa;
+}
+.profile {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+}
+h1 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+.info {
+    color: #666;
+    margin-bottom: 15px;
+}
+.content {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+</style>
 </head>
 <body>
-<h3>absolute path</h3>
 
-<img src="https://picsum.photos/600/300" alt="网络图片">
+<!-- 个人信息区（名字、头像、简介） -->
+<div class="profile">
+    <img class="avatar" src="https://picsum.photos/id/64/200/200" alt="头像">
+    <h1>小美</h1>
+    <p class="info">一个人类</p>
+    <p class="info">
+        📧 邮箱：example@xxx.com &nbsp;&nbsp;
+        💻 GitHub：<a href="https://github.com/xxx" target="_blank">xxx</a>
+    </p>
+</div>
+
+
+<div class="content">
+    <h3>absolute path</h3>
+
+<img src="https://picsum.photos/600/300"alt="网络图片">
 
 <h3>relative path</h3>
 
-<img src="images/zp.webp" alt="本地图片">
+<img src="images/zp.webp" alt="">
 </body>
-</html>  
+</html>
